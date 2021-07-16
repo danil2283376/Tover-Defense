@@ -19,15 +19,4 @@ public class ChangerDirectionRoad : MonoBehaviour
             }
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision != null)
-    //    {
-    //        IDirection directionEnemy = collision.gameObject.GetComponent<IDirection>();
-    //        if (directionEnemy != null)
-    //            directionEnemy.ChangeDirection(ChangeDirectionBot);
-    //    }
-    //    Debug.Log(collision.gameObject.name);
-    //}
 }

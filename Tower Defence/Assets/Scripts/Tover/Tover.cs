@@ -9,12 +9,10 @@ public class Tover : MonoBehaviour, ITover
     public float TimeForDestroyBullet;
 
     private float _currentTime;
-    //private DirectionTover _directionTover;
     private void Start()
     {
         if (ToverObject == null)
             throw new InvalidOperationException("ToverObject not be null!");
-        //this._directionTover = gameObject.GetComponent<DirectionTover>();
     }
 
     private void Update()

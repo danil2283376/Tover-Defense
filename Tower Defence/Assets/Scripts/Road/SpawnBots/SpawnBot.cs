@@ -44,7 +44,9 @@ public class SpawnBot : MonoBehaviour
 
     private void Spawn(GameObject enemy)
     {
-        GameObject createEnemy = Instantiate(enemy, gameObject.transform.position, 
+        Vector3 newPositionEnemy = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,
+            0);
+        GameObject createEnemy = Instantiate(enemy, newPositionEnemy, 
             Quaternion.identity, ParrentForBots.transform);
         if (createEnemy == null)
             throw new InvalidOperationException("Enemy not create!");
